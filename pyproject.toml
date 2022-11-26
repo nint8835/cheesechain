@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "cheesechain"
+version = "0.1.0"
+description = ""
+authors = ["Riley Flynn <riley@rileyflynn.me>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+"discord.py" = "^2.1.0"
+pydantic = {version = "^1.10.2", extras = ["dotenv"]}
+markovify = "^0.9.4"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.10.0"
+isort = "^5.10.1"
+mypy = "^0.991"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
